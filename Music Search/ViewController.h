@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+
+@property(strong,nonatomic) NSMutableArray* trackNameArray;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+//@property (nonatomic, weak) IBOutlet UITableView * tableView;
+@property (nonatomic, weak) NSString * currentSelectedSong;
+
+@property (weak, nonatomic) IBOutlet UITextField *textAreaSeachField;
+@property (weak, nonatomic) IBOutlet UIButton *actionSeachButton;
+
+@property (strong, nonatomic) NSMutableArray * playList;
+@property(strong,nonatomic) NSMutableArray *trackNameArrayLittleCopy;
 
 @end
 

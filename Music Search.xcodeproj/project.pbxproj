@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0440BB5C1B84C0F7006CC2EB /* ModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0440BB5B1B84C0F7006CC2EB /* ModelClass.m */; };
 		04DF91F21B83E4CA009F4891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91F11B83E4CA009F4891 /* main.m */; };
 		04DF91F51B83E4CA009F4891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91F41B83E4CA009F4891 /* AppDelegate.m */; };
 		04DF91F81B83E4CA009F4891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF91F71B83E4CA009F4891 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		04DF91FD1B83E4CA009F4891 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DF91FC1B83E4CA009F4891 /* Images.xcassets */; };
 		04DF92001B83E4CA009F4891 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DF91FE1B83E4CA009F4891 /* LaunchScreen.xib */; };
 		04DF920C1B83E4CA009F4891 /* Music_SearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF920B1B83E4CA009F4891 /* Music_SearchTests.m */; };
+		04DF92181B83E61F009F4891 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF92171B83E61F009F4891 /* Connection.m */; };
+		04DF921B1B83E6E0009F4891 /* JSONParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF921A1B83E6E0009F4891 /* JSONParsing.m */; };
+		04DF921F1B84221B009F4891 /* SongDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF921E1B84221B009F4891 /* SongDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0440BB5A1B84C0CC006CC2EB /* ModelClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelClass.h; sourceTree = "<group>"; };
+		0440BB5B1B84C0F7006CC2EB /* ModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelClass.m; sourceTree = "<group>"; };
 		04DF91EC1B83E4CA009F4891 /* Music Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DF91F01B83E4CA009F4891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DF91F11B83E4CA009F4891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,12 @@
 		04DF92051B83E4CA009F4891 /* Music SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DF920A1B83E4CA009F4891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DF920B1B83E4CA009F4891 /* Music_SearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Music_SearchTests.m; sourceTree = "<group>"; };
+		04DF92161B83E5F2009F4891 /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		04DF92171B83E61F009F4891 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		04DF921A1B83E6E0009F4891 /* JSONParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParsing.m; sourceTree = "<group>"; };
+		04DF921C1B83E715009F4891 /* JSONParsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParsing.h; sourceTree = "<group>"; };
+		04DF921D1B84221B009F4891 /* SongDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongDetailViewController.h; sourceTree = "<group>"; };
+		04DF921E1B84221B009F4891 /* SongDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0440BB591B84C0A1006CC2EB /* Model Class */ = {
+			isa = PBXGroup;
+			children = (
+				0440BB5A1B84C0CC006CC2EB /* ModelClass.h */,
+				0440BB5B1B84C0F7006CC2EB /* ModelClass.m */,
+			);
+			name = "Model Class";
+			sourceTree = "<group>";
+		};
 		04DF91E31B83E4CA009F4891 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +102,15 @@
 		04DF91EE1B83E4CA009F4891 /* Music Search */ = {
 			isa = PBXGroup;
 			children = (
+				0440BB591B84C0A1006CC2EB /* Model Class */,
+				04DF92151B83E5D6009F4891 /* Connection */,
+				04DF92191B83E6BB009F4891 /* Parsing */,
 				04DF91F31B83E4CA009F4891 /* AppDelegate.h */,
 				04DF91F41B83E4CA009F4891 /* AppDelegate.m */,
 				04DF91F61B83E4CA009F4891 /* ViewController.h */,
 				04DF91F71B83E4CA009F4891 /* ViewController.m */,
+				04DF921D1B84221B009F4891 /* SongDetailViewController.h */,
+				04DF921E1B84221B009F4891 /* SongDetailViewController.m */,
 				04DF91F91B83E4CA009F4891 /* Main.storyboard */,
 				04DF91FC1B83E4CA009F4891 /* Images.xcassets */,
 				04DF91FE1B83E4CA009F4891 /* LaunchScreen.xib */,
@@ -117,6 +143,24 @@
 				04DF920A1B83E4CA009F4891 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DF92151B83E5D6009F4891 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				04DF92161B83E5F2009F4891 /* Connection.h */,
+				04DF92171B83E61F009F4891 /* Connection.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		04DF92191B83E6BB009F4891 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				04DF921C1B83E715009F4891 /* JSONParsing.h */,
+				04DF921A1B83E6E0009F4891 /* JSONParsing.m */,
+			);
+			name = Parsing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DF91F81B83E4CA009F4891 /* ViewController.m in Sources */,
+				04DF921B1B83E6E0009F4891 /* JSONParsing.m in Sources */,
+				0440BB5C1B84C0F7006CC2EB /* ModelClass.m in Sources */,
 				04DF91F51B83E4CA009F4891 /* AppDelegate.m in Sources */,
 				04DF91F21B83E4CA009F4891 /* main.m in Sources */,
+				04DF921F1B84221B009F4891 /* SongDetailViewController.m in Sources */,
+				04DF92181B83E61F009F4891 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +464,7 @@
 				04DF92111B83E4CA009F4891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DF92121B83E4CA009F4891 /* Build configuration list for PBXNativeTarget "Music SearchTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +473,7 @@
 				04DF92141B83E4CA009F4891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
